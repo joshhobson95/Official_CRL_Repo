@@ -1,0 +1,262 @@
+.team_outer_shell{
+    height: auto;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #DED2C0;
+    font-family: Kaisei Decol;
+   padding-top: 5vh;
+   line-height: 1.5;
+}
+.team_background_image{
+  background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/chalk-doodles2.png);
+  width: 100vw;
+}
+.team_outer_shell img{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.team_intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.team_intro p{
+    margin: 2rem;
+    z-index: 2;
+    margin-bottom: 3.5rem;
+}
+.team_intro h2{
+    font-size: 24pt;
+    padding: 1rem;
+    font-weight: 800;
+}
+.blue_splotch_container{
+    position: relative;
+}
+.blue_splotch{
+    position: absolute;
+    width: 80vw;
+    top: 0px;
+    left: -200px;
+    z-index: 1;
+    box-shadow: none !important;
+}
+.george_and_susan{
+    margin: 1.5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.george_and_susan h2{
+    font-size: 18pt;
+    margin: 1rem;
+}
+.george_and_susan p{
+    margin: 1rem;
+}
+.george_and_susan h3{
+  font-size: 14pt;
+}
+.george{
+    width: 70vw;
+    justify-self: center;
+}
+.susan{
+    width: 70vw;
+}
+.other_faculty {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+  }
+  .other_faculty h4{
+    font-size: 14pt;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  .our_team_images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+  }
+  .our_team_images img{
+    width: 40vw;
+    margin: 0.5rem;
+  }
+  .other_faculty h2{
+    font-size: 16pt;
+  }
+  .faculty_bio{
+    margin: 2rem; 
+    line-height: 1.8;
+  }
+.faculty-bio-inner.visible{
+	margin: 2rem; 
+    line-height: 1.8;
+}
+.faculty-bio{
+	margin: 2rem;
+}
+.toggle_bio{
+	border: none;
+}
+.faculty-bio-h2b{
+	display:flex;
+	background-color: #d1c7b5;
+	width: 95vw;
+	margin: 0.2rem;
+}
+.faculty-bio-h2b button{
+	border: none;
+	background-color: transparent;
+	margin: 0.5rem;
+}
+
+
+
+
+
+  @media (min-width: 750px) {
+.blue_splotch{
+  width: 40vw;
+}
+.george{
+  width: 50vw;
+}
+.susan{
+  width: 50vw;
+}
+
+}
+  
+
+
+  @media (min-width: 1024px) {
+    .george{
+      width: 35vw;
+    }
+    .susan{
+      width: 35vw;
+    }
+    .george_and_susan{
+      flex-direction: row;
+    }
+    .our_team_images img{
+      width: 25vw;
+      margin: 1.5rem;
+    }
+
+
+    .team_intro{
+      margin: 2rem 8rem;
+    }
+    .team_intro p{
+      font-size: 16pt;
+    }
+    .george_and_susan{
+      font-size: 16pt;
+    }
+    .faculty p{
+      font-size: 16pt;
+    }
+    .other_faculty h4{
+      font-size: 18pt;
+    }
+    .faculty-bio-inner.visible p{
+      font-size: 14pt;
+      margin: 2rem;
+    }
+	  .other_faculty h2 {
+		font-size: 24pt;
+	  }
+
+
+
+  }
+
+  @media (min-width: 1400px) {
+
+    .george_and_susan p{
+      margin: 2rem 10rem;
+    }
+
+    .our_team_images img{
+      width: 20vw;
+      margin: 1.6rem;
+    }
+
+    .team_intro h2{
+      font-size: 32pt;
+    }
+    .george_and_susan h2{
+      font-size: 26pt;
+    }
+
+ 
+  }
+
+  @media (min-width: 1600px) { 
+
+
+    .george{
+      width: 30vw;
+    }
+    .susan{
+      width: 30vw;
+    }
+
+    .our_team_images img{
+      width: 20vw;
+
+    }
+    .faculty-bio-inner.visible p{
+      margin: 3rem 10rem;
+    }
+	  .george_and_susan h3{
+		  font-size: 16pt;
+	  }
+
+  }
+
+
+
+
+
+  @media (min-width: 1800px) { 
+    .george_and_susan{
+      margin: 5rem 10rem;
+    }
+    .george_and_susan p{
+      margin: 4rem 14rem;
+    }
+    .george{
+      width: 22vw;
+    }
+    .susan{
+      width: 22vw;
+    }
+    .our_team_images img{
+      width: 15vw;
+    }
+    .faculty-bio-inner.visible p{
+      margin: 3rem 15rem;
+    }
+	    .other_faculty h2{
+    font-size: 18pt;
+  }
+	  	  .george_and_susan h3{
+		  font-size: 18pt;
+	  }
+
+
+
+  }

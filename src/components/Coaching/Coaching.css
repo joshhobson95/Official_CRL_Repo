@@ -1,0 +1,333 @@
+.coaching_outer_shell{
+    background-color: #FDFDF5;
+    max-width: 100vw;
+    font-family: Kaisei Decol;
+    overflow: hidden;
+    overflow-x: hidden !important;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.coaching_top_background {
+    position: relative; 
+}
+.coaching_top_background::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/03/programs-scaled-1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(0.8); 
+    z-index: 0;
+	padding-bottom: 2rem;
+}
+.coaching_top{
+    color: white;
+    text-align: center;
+}
+.coaching_top h2{
+    position: relative;
+    font-size: 26pt;
+    padding: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+}
+.coaching_top_inner{
+background-color: #57558cd2;
+line-height: 1.5;
+padding: 0.5rem 2rem;
+margin: 2rem 0rem;
+position: relative;
+z-index: 2;
+}
+
+.coaching_opener{
+    text-align: center;
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/25opacitygreen.png);
+    background-size: 70vw;
+    background-position: -40vw 25vw;
+    background-repeat: no-repeat;
+}
+.coaching_opener h2{
+    font-size: 16pt;
+    margin: 1rem;
+}
+.coaching_opener p{
+    font-size: 12pt;
+    margin: 2rem;
+}
+
+.coaching_mid_page{
+    position: relative;
+    z-index: 3;
+    margin-top: 100px;
+}
+
+.coaching_icon_banner{
+    background-color: #fdc67761;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+.coaching_icon_banner h3{
+    font-size: 14pt;
+    padding: 1rem;
+}
+.calendly_container_inner{
+	margin: 1rem;
+}
+
+.coaching_icon_banner h4{
+	font-size: 12pt;
+	padding: 1rem;
+    text-decoration: underline;
+}
+
+
+
+.coaching_just_icons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.coaching_icon_banner img{
+    width: 20vw ;
+}
+
+.coaching_closer{
+width: 100vw;
+text-align: center;
+margin-bottom: 4rem;
+}
+.coaching_closer_text{
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/greenlogotransparent.png);
+    background-size: 70vw;
+    background-position: 60vw 30vw;
+    background-repeat: no-repeat;
+}
+.coaching_closer h3{
+    font-size: 16pt;
+    padding: 1rem;
+}
+.coaching_closer p{
+    font-size: 12pt;
+    padding: 2rem;
+}
+
+.coaching_image{
+    width: 125vw;
+}
+.coaching_image_container{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/newyellow.png);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: 10vw 10vw;
+    padding-bottom: 1rem;
+}
+
+.calendly_container_outer h2{
+    font-size: 16pt;
+    text-align: center;
+    margin: 1rem;
+}
+.calendly_container_outer p{
+    font-size: 12pt;
+    text-align: center;
+}
+
+.calendly_text{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+
+@media (min-width: 750px) {
+	.coaching_mid_page{
+		margin-top: 250px;
+	}
+    .coaching_icon_banner img{
+        width: 11vw;
+    }
+    .coaching_closer_text{
+        background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/greenlogotransparent.png);
+        background-size: 40vw;
+        background-position: 80vw 0vw;
+        background-repeat: no-repeat;
+    }
+    .coaching_opener{
+        text-align: center;
+        background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/25opacitygreen.png);
+        background-size: 40vw;
+        background-position: -20vw 5vw;
+        background-repeat: no-repeat;
+    }
+    .coaching_image{
+        width: 100vw;
+    }
+    .coaching_just_icons{
+        flex-direction: row;
+    }
+
+
+
+}
+
+
+@media (min-width: 1024px) {
+		.coaching_mid_page{
+		margin-top: 100px;
+	}
+   
+    .coaching_top h2{
+        font-size: 56pt;
+        font-weight: 500;
+        padding-top: 3vh;
+    }
+    .coaching_top_inner p{
+    margin: 2rem 4rem;
+    font-size: 16pt;
+    }
+    .coaching_opener h2{
+        font-size: 22pt;
+    }
+    .coaching_opener p{
+        font-size: 16pt;
+    }
+    .coaching_icon_banner h3{
+        font-size: 20pt;
+    }
+    .coaching_just_icons h4{
+        font-size: 16pt;
+    }
+    .coaching_closer h3{
+        font-size: 22pt;
+    }
+    .coaching_closer p{
+        font-size: 16pt;
+    }
+    .coaching_image_container{
+        background-size: 50vw;
+        background-position: 50vw 20vw;
+    }
+    .calendly_container_outer h2{
+        font-size: 22pt;
+        margin: 1rem;
+    }
+    .calendly_container_outer p{
+        font-size: 16pt;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .coaching_opener p{
+        margin: 2rem 6rem;
+    }
+    .coaching_closer p{
+        margin: 2rem 6rem;
+    }
+    .coaching_opener h2{
+        font-size: 24pt;
+    }
+    .coaching_closer h3{
+        font-size: 24pt;
+    }
+    .coaching_icon_banner h3{
+        margin: 1rem;
+    }
+    .coaching_just_icons h4{
+        font-size: 18pt;
+    }
+    .coaching_icon_banner img{
+        width: 7vw;
+    }
+    .coaching_image{
+        width: 75vw;
+    }
+    .coaching_image_container{
+        background-size: 30vw;
+        background-position: 45vw 20vw;
+    }
+    .calendly_container_outer h2{
+        font-size: 24pt;
+    }
+
+
+}
+
+
+@media (min-width: 1600px) {
+    .coaching_top_inner p{
+        margin: 2rem 8rem;
+    }
+    .coaching_opener h2{
+        font-size: 26pt;
+    }
+    .coaching_opener p{
+      padding: 2rem 0rem;
+      margin: 2rem 10rem;
+      line-height: 2;
+    }
+    .coaching_closer h2{
+        font-size: 26pt;
+    }
+    .coaching_closer p{
+  
+      margin: 2rem 10rem;
+      line-height: 2;
+    }
+    .calendly_container_outer h2{
+        font-size: 26pt;
+    }
+		.coaching_top_background::before{
+		height: 100%;
+	}
+	.coaching_top h2{
+		padding-top: 5vh;
+	}
+	    .coaching_image{
+        width: 70vw;
+    }
+
+}
+
+
+@media (min-width: 1800px) {
+    .coaching_top_inner p{
+        margin: 2rem 12rem;
+		font-size: 18pt;
+    }
+
+    .coaching_just_icons h4{
+        font-size: 22pt;
+    }
+    .coaching_icon_banner h3{
+        font-size: 26pt;
+    }
+    .coaching_opener p{
+        margin: 1rem 24rem;
+    }
+	    .coaching_image{
+        width: 60vw;
+    }
+
+}
+
+
+@media (min-width: 2000px) {
+    .coaching_top h2{
+        font-size: 72pt;
+    }
+    .coaching_top_inner p{
+        margin: 2rem 16rem;
+    }
+}

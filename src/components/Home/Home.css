@@ -1,0 +1,835 @@
+.home_outer_container{
+    max-width: 100vw;
+    overflow: hidden !important;
+    box-sizing: border-box;
+}
+.blog_block a{
+	text-decoration: none;
+	   color: #0B8F99 !important;
+		align-self: center;
+
+}
+.freehand_header{
+    font-family: Freehand;
+    font-size: 24pt;
+    padding: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #0B8F99;
+    text-align: center;
+}
+
+.home_ladder{
+    height: auto;
+    width: 100vw;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: -1;
+}
+.home_top_text{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home_top_text p{
+    font-family: Kaisei Decol;
+    font-size: 12pt;
+    line-height: 2;
+    margin: 1rem;
+    text-align: center;
+}
+.home_more_info_shell {
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/02/yellowbigalt.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    padding: 1rem;
+}
+
+.home_more_info{
+   border: transparent 2px solid;
+    background-color: #0B8F99;
+    font-family: Kaisei Decol;
+    font-weight: 500;
+    color: white;
+    font-size: 16pt;
+    padding: 0.6rem;
+    align-self: center;
+    margin: 1rem;
+	cursor: pointer;
+}
+.home_more_info:hover{
+background-color:white ;
+border: #0B8F99 2px solid;
+color: #0B8F99;
+transition: 0.5s ease-in-out;
+}
+
+.blog_section{
+    background-color: #D47A5F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.blog_block h2{
+    color: #0B8F99;
+    font-family: Kaisei Decol;
+    font-weight: 500;
+    font-size: 20pt;
+    text-align: center;
+}
+.blog_block p{
+    font-family: Kaisei Decol;
+    margin: 1rem;
+    line-height: 1.5;
+    font-size: 12pt;
+	max-width: 65vw;
+}
+.blog_image{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.blog_history_shell{
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/02/paintbrush2-51.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+.blog_history{
+    background-color: #D9D9D9;
+    margin: 2rem;
+    padding: 1rem;
+    font-family: Kaisei Decol;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blog_history h2{
+    color: #0B8F99 !important;
+    font-family: Kaisei Decol;
+    font-weight: 500;
+    font-size: 20pt;
+    text-align: center;
+}
+
+.blog_history button{
+    border: none;
+    background-color: #0B8F99;
+    font-family: Kaisei Decol;
+    font-weight: 500;
+    color: white;
+    font-size: 16pt;
+    padding: .6rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+
+.blog_history p{
+	font-size: 12pt;
+	text-align:center;
+}
+
+
+.home_links{
+    font-family: Kaisei Decol;
+    color: #57558C;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home_links h2{
+    font-weight: 500;
+    font-size: 20pt;
+    margin: 1rem;
+}
+.home_links img{
+width: 45vw;
+
+}
+
+.listen_learn_watch{
+    background: linear-gradient(to top, #D9D9D9, #ffffff);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.CRL_for_all{
+    background-color: #57558C;
+    color: white;
+    font-family: Kaisei Decol;
+    padding: 1rem;
+    text-align: center;
+}
+.CRL_for_all h2{
+    font-weight: 500;
+    margin: 1rem;
+    margin-bottom: 3rem;
+    font-size: 20pt;
+    position: relative;
+}
+.CRL_for_all p{
+line-height: 1.5;
+position: relative;
+z-index: 3;
+font-size: 12pt;
+}
+.CRL_for_all h3{
+    font-weight: 500;
+    margin: 1rem;
+    font-size: 18pt;
+    position: relative;
+    z-index: 3;
+}
+.CRL_for_all img{
+    width: 80vw;
+    z-index: 2;
+    margin: 1rem;
+}
+.underline{
+ position: relative;   
+}
+.underline::after {
+    content: '';
+    position: absolute; 
+    left: 0; 
+    bottom: -5px; 
+    width: 100%; 
+    height: 12px; 
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/03/yellowpaint.png'); 
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+}
+
+.boardroom_container {
+    position: relative;
+  }
+  .boardroom{
+    position: relative;
+    z-index: 2;
+  }
+  .greenwheel {
+    position: absolute;
+    top: -47px;
+    left: -21px;
+    z-index: 1 !important;
+    width: 40vw !important;
+  }
+  .redwheel_container{
+    position: relative;
+  }
+  .redwheel{
+    position: absolute;
+    width: 40vw !important;
+    left: 332px;
+    top: -95px;
+  }
+  .classroom_container{
+    position: relative;
+  }
+  .kids{
+    position: relative;
+    z-index: 3 !important;
+  }
+  .paint{
+    position: absolute;
+    width: 70vw !important;
+    left: 100px;
+    top: -40px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+.relationalforall {
+    position: relative;
+  }
+  
+.global_effort{
+    font-family: Kaisei Decol;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 4;
+}
+.global_effort h2, h4{
+   font-weight: 500;
+   font-size: 16pt;
+}
+.global_effort p{
+    margin: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 12pt;
+}
+.global_bottom{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.global_bottom img{
+width: 40vw;
+padding: 1.5rem;
+}
+
+.home_email_container{
+	display:flex;
+	justify-content:center;
+}
+
+.home_email_form_shell{
+    display: flex;
+    justify-content: center;
+	background-color: #f2e7d8;
+	width: 80%;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.home_email_form h2{
+font-size: 14pt;
+
+padding-bottom: 2rem;
+text-align: center;
+}
+
+.home_email_div{
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+.home_email_form div{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.gradient_bottom_page{
+    background-image: linear-gradient( #D9d9d952, rgba(87, 85, 140, 0.58));
+}
+
+.booksplash{
+    width: 80vw;
+}
+.booksplash_shell{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.blog_block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    margin: 2rem;
+    padding: 1rem;
+}
+.blog_block h2{
+	padding: 2rem;
+}
+.blog_block img{
+	height: 30vh;
+	width: 65vw;
+ object-fit: cover;
+ align-self: center;
+}
+#logo-crl-home{
+	width: 8vw;
+}
+.learn_more_history_container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items:center;
+}
+.learn_more_history_container button{
+	cursor: pointer;
+}
+.blog_history button{
+	border: transparent 2px solid !important;
+}
+.learn_more_history_container button:hover{
+	color: #0B8F99;
+    background-color: white;
+		border: 2px solid #0B8F99 !important;
+	transition: 1s;
+}
+.listen_learn_watch a{
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+}
+
+
+@keyframes highlight-learn {
+  0% {
+    background-color: transparent;
+    padding-left: 0;
+  }
+  100% {
+    background-color: #FDC677;
+    padding-left: 10px;
+	  	  padding: 20px
+  }
+}
+
+@keyframes highlight-listen {
+  0% {
+    background-color: transparent;
+    padding-left: 0;
+  }
+  100% {
+    background-color: #D47A5F;
+    padding-left: 10px;
+	  padding: 20px
+  }
+}
+
+@keyframes highlight-watch {
+  0% {
+    background-color: transparent;
+    padding-left: 0;
+  }
+  100% {
+    background-color: #ABBA4A;
+    padding-left: 10px;
+	  	  padding: 20px
+  }
+}
+
+
+
+
+.home_page_blog_date{
+	display:flex;
+	justify-content: flex-end;
+	font-family: Kaisei Decol;
+}
+.back_to_blogs a{
+	text-decoration: none !important;
+}
+.back_to_blogs p{
+	align-self: center;
+	margin: 0.3rem;
+}
+
+
+.back_to_blogs_button{
+	display:flex;
+	justify-content:center;
+	text-decoration: none;
+	margin: 1rem;
+	border: 2px solid transparent;
+	background-color: #D47A5F;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) {
+	
+	
+
+	
+	.home_links:hover .learn-header {
+  transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  animation: highlight-learn 0.3s ease-in-out forwards;
+}
+
+.home_links:hover .listen-header {
+  transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  animation: highlight-listen 0.3s ease-in-out forwards;
+}
+
+.home_links:hover .watch-header {
+  transition: background-color 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  animation: highlight-watch 0.3s ease-in-out forwards;
+}
+	
+	
+	
+	
+	.freehand_header{
+    font-size: 40pt;
+}
+	.back_to_blogs_button{
+	margin: 4rem;
+}
+
+    
+    .home_top_text {
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width:45vw; 
+        margin-top: 3rem;
+    }
+    .home_top_text p {
+        font-size: 14pt;
+    }
+    .freehand_header{
+        font-size: 30pt;
+    }
+    .home_ladder{
+        margin-bottom: -1rem;
+    }
+    .home_top_text p{
+        line-height: 1.75;
+    }
+    .home_more_info{
+        font-size: 14pt;
+    }
+    .blog_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+    .blog_section_inner_blogs{
+        display: flex;
+    }
+    .blog_history_shell{
+        width: 60vw;
+    }
+    .listen_learn_watch{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .home_links img{
+        width: 15vw;
+    }
+    .home_links p{
+        font-size: 16pt;
+    }
+    .greenwheel{
+        top: -100px;
+        left: -100px;
+    }
+    .redwheel{
+        width: 23vw !important;
+        left: 882px;
+        top: -39px;
+    }
+    .CRL_for_all img{
+        width: 50vw;
+    }
+    .CRL_for_all_top{
+        display: flex;
+		padding-bottom: 10rem;
+    }
+    .CRL_for_all_bottom{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .global_effort h2{
+        font-size: 20pt;
+    }
+    .global_effort p{
+        margin: 2rem 4rem;
+        font-size: 14pt;
+    }
+    .global_bottom{
+       flex-direction: row;
+    }
+    .global_bottom img{
+       width: 15vw;
+    }
+    .global_bottom div{
+        width: 20vw;
+        margin: 1rem;
+    }
+    .home_email_div{
+        display: flex;
+        justify-content: space-around;
+		padding-bottom: 5rem;
+
+    }
+    .booksplash{
+        width: 50vw;
+    }
+    .home_email_form{
+        width: 20rem;
+    }
+    .home_email_form h2{
+        font-size: 16pt;
+    }
+    .CRL_for_all h3{
+        font-size: 22pt;
+    }
+    .CRL_for_all p{
+        font-size: 14pt;
+    }
+	
+    .blog_block h2{
+        padding: 2rem;
+    }
+    .blog_block img{
+        height: 20vh;
+        width: 25vw;
+     object-fit: cover;
+    }
+    #logo-crl-home{
+        width: 8vw;
+    }
+	
+	.home_email_form_shell{
+    display: flex;
+    justify-content: center;
+	background-color: #f2e7d8;
+	width: 70%;
+    height: 600px;
+    border-radius: 15px;
+}
+	.classroom{
+		text-align: left;
+	}
+	.boardroom{
+		text-align: right;
+	}
+	.CRL_for_all h2{
+		font-size: 32pt;
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+	
+	
+}
+
+
+@media (min-width: 1200px) {
+	
+
+.freehand_header{
+    font-size: 42pt;
+}
+.home_top_text p{
+    line-height: 2;
+}
+.home_more_info{
+    font-size: 16pt;
+}
+	.blog_history p{
+	font-size: 14pt;
+}
+.redwheel{
+    left: 1076px;
+    top: -85px;
+}
+.home_links h2{
+    font-size: 26pt;
+}
+.CRL_for_all h2{
+    font-size: 26pt;
+}
+.CRL_for_all h3{
+    font-size: 22pt;
+}
+.global_effort h2{
+    font-size:  26pt;
+}
+
+	.blog_block h2{
+		font-size: 24pt;
+	}
+	.blog_block p{
+		font-size: 14pt;
+		max-width: 25vw;
+	}
+}
+
+@media (min-width: 1400px) {
+		.blog_block a{
+	    margin: 0rem 1.5rem;
+}
+.freehand_header{
+    font-size: 44pt;
+}
+.home_top_text{
+    margin-top: 8rem;
+}
+.home_top_text p {
+    margin: 3rem;
+    font-size: 14pt;
+}
+.home_more_info{
+    font-size: 22pt;
+}
+.redwheel {
+    left: 1243px;
+    top: -24px;
+}
+.greenwheel {
+    top: -137px;
+    left: -140px;
+}
+.CRL_for_all p{
+    line-height: 2;
+}
+.CRL_for_all_top_text h3{
+   text-align: left;
+   font-size: 26pt;
+   margin: 2rem 3rem;
+}
+.CRL_for_all_bottom_text h3{
+   text-align: right;
+   font-size: 26pt;
+   margin: 2rem 3rem;
+}
+.global_effort p {
+   line-height: 2;
+}
+.blog_history_shell {
+    width: 50vw;
+}
+
+}
+
+@media (min-width: 1600px) {
+
+ .home_ladder_container{
+    max-height: 80vh;
+    display: block;
+} 
+    .redwheel {
+        left: 1480px;
+        top: -31px;
+    }
+    .CRL_for_all img{
+        width: 45vw;
+    }
+    .CRL_for_all p{
+        margin: 1rem 3rem;
+    }
+    .CRL_for_all_top_text h3{
+        font-size: 30pt;
+     }
+    .CRL_for_all_bottom_text h3{
+        font-size: 30pt;
+     }
+     .CRL_for_all h2 {
+        font-size: 32pt;
+    }
+    .blog_block img{
+        height: 30vh;
+
+     object-fit: cover;
+     align-self: center;
+    }
+    
+}
+
+@media (min-width: 1800px) {
+			.blog_block a{
+	    margin: 0rem 3rem;
+}
+    .freehand_header{
+        margin: 1rem 5rem;
+    }
+    .home_top_text p {
+        margin: 5rem;
+        font-size: 14pt;
+    }
+    .listen_learn_watch{
+        padding: 2rem 15rem;
+    }
+    .home_links h2{
+        font-size: 28pt;
+    }
+    .redwheel {
+        left: 1865px;
+        top: -31px;
+    }
+    .greenwheel {
+        top: -145px px;
+        left: -161px;
+        width: 30vw !important;
+    }
+    .CRL_for_all{
+		padding-top: 5rem !important;
+        padding: 10rem;
+    }
+    .CRL_for_all p {
+        line-height: 2;
+        font-size: 16pt;
+    }
+    .global_effort p{
+        font-size: 16pt;
+        padding: 0rem 10rem;
+    }
+    .global_effort h2{
+        font-size: 34pt;
+    }
+    .global_effort h4{
+        font-size: 18pt;
+    }
+    .CRL_for_all_top_text h3 {
+        font-size: 32pt;
+    }
+    .CRL_for_all h2 {
+        font-size: 34pt;
+    }
+    .CRL_for_all img {
+        width: 40vw;
+    }
+    .blog_history_shell {
+        width: 40vw;
+    }
+    .global_effort{
+        padding: 6rem 10rem;
+    }
+    .booksplash{
+        width: 40vw;
+		margin-bottom: 5rem;
+   		margin-top: -5rem;
+    }
+    .home_email_form{
+        width: 25vw;
+        height: 45vh;
+    }
+    .home_email_form h2{
+        font-size: 22pt;
+        padding: 3rem;
+    }
+    .home_email_form label{
+        font-size: 16pt;
+    }
+    #firstName{
+        height: 3.3rem;
+    }
+    #lastName{
+        height: 3.3rem;
+    }
+    #email{
+        height: 3.3rem;
+    }
+    .home_email_form button{
+        font-size: 19pt;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        width: 10rem;
+    }
+}
+
+
+@media (min-width: 2000px) {
+	
+	.CRL_for_all img{
+		width: 35vw;
+	}
+	
+}

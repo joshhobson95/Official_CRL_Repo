@@ -1,0 +1,361 @@
+.contact_outer_shell{
+    height: auto;
+    background-color: #57558C;
+    color: white;
+    font-family: Kaisei Decol;
+}
+
+.contact_header{
+    margin: 2rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+}
+.contact_header h2{
+ font-size: 26pt;
+ padding: 1rem;
+ text-align: center;
+}
+.contact_header p{
+ font-size: 12pt;
+ padding: 1rem;
+}
+.contact_george_container{
+	display: flex;
+    justify-content: center;
+}
+.contact_george{
+    width: 60vw;
+}
+.contact_mid_page{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.phone_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.email_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+
+.phone_icon{
+    width: 10vw;
+    margin: 1rem;
+}
+.email_icon{
+    width: 10vw;
+    margin: 1rem;
+}
+.contact_email_form{
+    background-color: #0B8F99;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    color: white;
+    font-family: Kaisei Decol;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 65vw;
+
+}
+.contact_email_form_shell{
+    display: flex;
+    justify-content: center;
+}
+.contact_email_form_shell p{
+	margin: 0 !important;
+}
+
+.contact_email_form button{
+    font-family: Kaisei Decol;
+    background-color: #57558C;
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 7rem;
+    margin: 1rem;
+    border-radius: 10px;
+    align-self: center;
+    font-size: 12pt;
+}
+.contact_email_form h2{
+font-size: 14pt;
+padding: 0.75rem;
+padding-bottom: 2rem;
+text-align: center;
+}
+.contact_email_form input{
+    margin: .5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+
+.contact_email_form_shell{
+    display: flex;
+    justify-content: center;
+	background-color: #f2e7d8;
+	width: 80%;
+    height: 600px;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+.contact_email_form div{
+    display: flex;
+    flex-direction: column;
+}
+.email_list{
+    padding-top: 2rem;
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/chang-duong-Sj0iMtq_Z4w-unsplash.jpg);
+    background-size: 250% auto;
+    background-repeat:no-repeat;
+    padding-bottom: 5rem;
+
+}
+.email_list h2{
+    font-size: 20pt;
+    margin: 1rem;
+    text-align: center;
+}
+.email_list p{
+    margin: 3rem;
+}
+.contact_form_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contact_logo_container{
+    position: relative;
+    width: 90vw;
+    height: 10vh;
+}
+.contact_logo{
+    height: auto;
+    width: 40vw;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    opacity: 50%;
+}
+
+.phone_container a {
+    text-decoration: none; 
+    color: inherit;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+
+}
+.phone_container img.phone_icon {
+    margin-left: 20px;
+}
+.email_container a {
+    text-decoration: none; 
+    color: inherit; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+}
+.email_container img.email_icon {
+    margin-left: 20px;
+}
+
+.phone_icon {
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+
+.phone_icon:hover {
+    animation: shake 0.3s ease-in-out; /* Apply the shake animation on hover */
+}
+
+@keyframes shake {
+    0% { transform: rotate(-5deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.email_icon {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform */
+}
+
+.email_icon:hover {
+    animation: woosh 0.5s ease-in-out alternate; /* Apply the woosh animation on hover */
+}
+
+@keyframes woosh {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+.contact_form_text{
+    background-color: #1f1c1c85;
+    border-radius: 10px;
+    margin: 2rem;
+
+}
+
+
+@media (min-width: 800px) {
+    .contact_header h2{
+        font-size: 36pt;
+    }
+    .contact_header p{
+        font-size: 16pt;
+    }
+    .phone_icon{
+        width: 12vw;
+    }
+    .phone_container p{
+        font-size: 18pt;
+    }
+    .email_icon{
+        width: 12vw;
+    }
+    .email_container p{
+        font-size: 18pt;
+    }
+    .email_list h2{
+        font-size: 28pt;
+    }
+    .email_list p{
+        font-size: 16pt;
+    }
+    .contact_email_form label{
+        font-size: 16pt;
+    }
+    .contact_george{
+        width: 50vw;
+    }
+}
+@media (min-width: 1024px) {
+    .contact_header{
+        display: flex;
+    }
+    .contact_mid_page{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    .contact_email_form{
+        padding: 3rem;
+    }
+    .email_list{
+        background-size: 140%;
+    }
+    .contact_header h2{
+        text-align: left;
+    }
+    .contact_form_text{
+        width: 40%;
+    }
+    .contact_form_container{
+        justify-content: space-around;
+    }
+	.contact_george_container{
+	display: block;
+    justify-content: center;
+}
+	
+.contact_email_form_shell{
+	width: 35%;
+	}
+	
+	
+	
+}
+
+
+@media (min-width: 1200px) {
+    .contact_form_container{
+        flex-direction: row;
+
+    }
+
+    .contact_form_text {
+        order: 2;
+        margin-right: 20px;
+    }
+    .contact_email_form {
+        order: 1;
+    }
+    .email_list{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .contact_george{
+        width: 25vw;
+    }
+    .email_icon{
+        width: 8vw;
+    }
+    .phone_icon{
+        width: 8vw;
+    }
+    .contact_logo{
+        width: 25vw;
+        left: 55%;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .contact_header{
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1550px) {
+    .contact_header h2{
+        font-size: 56pt;
+    }
+    .phone_container p{
+        font-size: 20pt;
+    }
+    .email_container p{
+        font-size: 20pt;
+    }
+	.contact_header p{
+		font-size: 18pt;
+	}
+}
+@media (min-width: 1750px) {
+	   .contact_logo{
+        width: 25vw;
+    }
+	@media (min-width: 1750px) {
+		.contact_logo{
+        left: 50%;
+    }
+	}
+	
+	
+}

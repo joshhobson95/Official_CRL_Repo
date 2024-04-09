@@ -1,0 +1,229 @@
+.resources_outer_shell{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100vw;
+    font-family: Kaisei Decol;
+    overflow: hidden;
+    overflow-x: hidden !important;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color: #E0CDB1;
+}
+
+.resources_top_background {
+    position: relative; 
+}
+
+.resources_top_background::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 370px;
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/02/sincerely-media-IIIr1Hu6aY-unsplash-2.png');
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(0.8); 
+    z-index: 0;
+	padding-bottom: 2rem;
+}
+
+.resources_top{
+    color: white;
+    text-align: center;
+}
+
+.resources_top h2{
+    position: relative;
+    font-size: 26pt;
+    padding: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+}
+
+.resources_top_inner{
+background-color: #57558cce;
+line-height: 1.5;
+padding: 0.5rem 2rem;
+margin: 2rem 0rem;
+position: relative;
+z-index: 2;
+}
+
+
+
+.resources_mid_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.resource_block1{
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/jason-pofahl-rRmVB-gHZQc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    width: 50vw;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.resource_block2{
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/jason-pofahl-rRmVB-gHZQc-unsplash.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    width: 50vw;
+    padding: 2rem;
+    margin: 1rem;
+}
+.resource_block3{
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/jason-pofahl-rRmVB-gHZQc-unsplash.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    width: 50vw;
+    padding: 2rem;
+    margin: 1rem;
+}
+.resource_block_inner h3{
+    font-size: 12pt;
+}
+.resource_block_inner{
+    color: white;
+    background-color: #373935d7;
+    padding: 1rem 0rem;
+    margin-top: 6vh;
+    font-size: 10pt;
+}
+
+.resource_block img{
+    width: 35vw;
+}
+.resource_block h3{
+    font-size: 16pt;
+    padding: 1rem;
+}
+.resource_block p{
+    padding: 1rem;
+}
+.resource_green_paint_container{
+    overflow-x: hidden !important;
+    overflow: hidden;
+    max-width: 100vw;
+    position: relative;
+    z-index: 4;
+    height: 15vh;
+    margin-top: -5vh;
+}
+.resource_green_paint{
+    position: absolute;
+    transform: scaleY(-1);
+    width: 90vw;
+    z-index: 2;
+    top: 0px;
+    left: 200px;
+}
+
+
+@media (min-width: 950px) {
+.resource_block_inner h3{
+    font-size: 18pt;
+}
+.resource_block_inner p{
+    font-size: 14pt;
+    margin: 1rem 2rem;
+}
+.resource_yellow_paint{
+    width: 30vw;
+}
+.resources_top h2{
+    font-size: 30pt;
+}
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+    .resources_top h2{
+        font-size: 56pt;
+        font-weight: 500;
+        padding-top: 3vh;
+    }
+    .resources_top_inner p{
+    margin: 2rem 4rem;
+    font-size: 16pt;
+    }
+    .resources_mid_page{
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1600px) {
+    .resources_top_inner p{
+        margin: 2rem 8rem;
+    }
+    .resource_block1{
+        width: 30vw;
+        background-size: 30vw;
+    }
+    .resource_block2{
+        width: 30vw;
+        background-size: 30vw;
+    }
+    .resource_block3{
+        width: 30vw;
+        background-size: 30vw;
+    }
+		.resources_top_background::before{
+		height: 100%;
+	}
+	.resources_top h2{
+		padding-top: 5vh;
+	}
+
+}
+
+
+@media (min-width: 1800px) {
+    .resources_top_inner p{
+        margin: 2rem 12rem;
+		   font-size: 18pt;
+    }
+
+    .resource_block1{
+        height: 40vh;
+        width: 30vw;
+        background-size: 30vw;
+    }
+    .resource_block2{
+        height: 40vh;
+        width: 30vw;
+        background-size: 30vw;
+    }
+    .resource_block3{
+        height: 40vh;
+        width: 30vw;
+        background-size: 30vw;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    .resources_top h2{
+        font-size: 72pt;
+    }
+    .resources_top_inner p{
+        margin: 2rem 16rem;
+    }
+}
