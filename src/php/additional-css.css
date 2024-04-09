@@ -1,0 +1,250 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+		margin-right: 4rem;
+}
+
+.menu .menu-item {
+    position: relative; 
+    margin-left: 40px;
+	font-size: 14pt;
+	font-weight: 700;
+	margin-bottom: 2rem;
+
+}
+
+.menu .sub-menu {
+    display: none;
+    top: 100%;
+    left: 50%; /* Position the dropdown menu relative to its parent */
+    transform: translateX(-50%); /* Center the dropdown menu horizontally */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#menu-item-364 .sub-menu{
+background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/NavPaint.png);
+	background-size: 25vw;
+	background-position: -10vw -5vw;
+	background-repeat: no-repeat;
+	border: solid 2px #57558C;
+	border-radius: 15px;
+}
+#menu-item-365 .sub-menu{
+	background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint2.png);
+	background-size: 25vw;
+	background-position: 5vw 0vw;
+	background-repeat: no-repeat;
+			border: solid 2px #D47A5F;
+	border-radius: 15px;
+
+}
+#menu-item-366 .sub-menu{
+	background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint3.png);
+	background-size: 25vw;
+	background-position: 5vw 5vw;
+		background-repeat: no-repeat;
+		border: solid 2px #FDC677;
+	border-radius: 15px;
+	
+}
+#menu-item-367 .sub-menu{
+		background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint4.png);
+	background-size: 25vw;
+	background-position: -10vw 0vw;
+		background-repeat: no-repeat;
+			border: solid 2px #0B8F99;
+	border-radius: 15px;
+}
+
+.menu .menu-item:hover .sub-menu {
+    display: block;
+	position: absolute;
+	padding: 1rem;
+}
+
+.menu .menu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu .menu-item .sub-menu li a {
+    padding: 30px 45px;
+    color: #333;
+    text-decoration: none;
+}
+.menu .menu-item .sub-menu li {
+    list-style-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/NavLogo-e1710187325785.png);
+
+}
+
+
+.menu .menu-item:hover > a {
+    background-color: #f0f0f0;
+}
+
+.menu .menu-item > a::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #D6D6D6;
+		z-index: -1;
+}
+
+.menu .sub-menu li a::before {
+    content: none;
+}
+
+
+#header{
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+#logo-crl-home{
+	width: 22vw;
+}
+
+.menu-menu-1-container{
+	padding-top: 3.5vh;
+}
+	
+	
+	
+
+
+
+.pagination-wrapper{
+	display: flex;
+}
+.pagination-wrapper > a{
+	padding: 0.5rem;
+	font-size: 14pt;
+}
+.pagination-wrapper > span{
+	padding: 0.5rem;
+	font-size: 14pt;
+}
+.pagination-wrapper span{
+	text-decoration: underline;
+}
+.next.page-numbers{
+	text-decoration: none;
+}
+.prev.page-numbers{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+	
+	#logo-crl-home{
+	width: 50vw;
+}
+
+	
+	
+	
+	.menu-menu-1-container{
+	margin: 1rem;
+}
+    /* Change the layout to a column for small screens */
+    .menu {
+        flex-direction: column;
+        justify-content: flex-start; /* Align menu items to the top */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .menu .menu-item {
+        margin: 10px 0; /* Add margin between menu items */
+    }
+
+    /* Show the submenu on hover for small screens */
+    .menu .menu-item:hover .sub-menu {
+        display: block;
+        left: auto;
+        top: auto;
+        transform: none;
+        box-shadow: none;
+    }
+	
+
+	
+
+	.menu .menu-item .sub-menu li a {
+		padding-left: 100px;
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+}
+	#menu-item-364 .sub-menu{
+	background-size: 100vw;
+}
+#menu-item-365 .sub-menu{
+	background-size: 100vw;
+}
+#menu-item-366 .sub-menu{
+	background-size: 100vw;
+}
+#menu-item-367 .sub-menu{
+		background-size: 100vw;
+}
+	
+.menu .menu-item .sub-menu li {
+    list-style-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/NavLogo-e1710187325785.png);
+	margin-left: 30px;
+	margin-top: 20px
+
+}
+}
+
+
+@media (min-width: 1300px) {
+	.menu span{
+		font-size: 16pt;
+	}
+		.menu-menu-1-container{
+	padding-top: 5vh;
+}
+
+
+
+
+
+@media (min-width: 1500px) {
+	.menu span{
+		font-size: 18pt;
+	}
+		.menu-menu-1-container{
+	padding-top: 7vh;
+}
+	
+}
+@media (min-width: 1800px) {
+	.menu-menu-1-container{
+	padding-top: 9vh;
+}
+	#logo-crl-home{
+	width: 16vw;
+}
+	
+}
+
+}

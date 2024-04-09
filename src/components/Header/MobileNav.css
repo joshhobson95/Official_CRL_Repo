@@ -1,0 +1,131 @@
+.hamburger-container{
+	display: none !important;
+}
+
+
+@media screen and (max-width: 768px) {
+	.hamburger-container{
+	display: flex !important;
+	justify-content: flex-end;
+		z-index: 50;
+}
+    .desktop-menu {
+        display: none;
+    }
+
+    /* Style the hamburger menu button */
+    .menu-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 20px;
+		z-index: 51;
+    }
+
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        position: relative;
+    }
+
+    .hamburger:before,
+    .hamburger:after {
+        content: '';
+        display: block;
+            width: 30px;
+        height: 4px;
+        background-color: #333;
+        position: absolute;
+    }
+
+    .hamburger:before {
+        top: -8px;
+    }
+
+    .hamburger:after {
+        top: 8px;
+    }
+
+    /* Show the mobile menu container */
+    .menu-container {
+        display: block;
+    }
+}
+/* Additional styles for the X shape */
+.menu-toggle.active .hamburger:before {
+    transform: translateY(8px) rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.active .hamburger {
+	    transform: translateY(-8px) rotate(-45deg);
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle.active .hamburger:after {
+    transform: scaleX(0); /* Hide the middle line by scaling it to zero width */
+    transition: transform 0.3s ease;
+}
+
+
+
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 2.5%;
+    background-color: #f9f9f9;
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container.show-menu {
+    display: block;
+	z-index: 50;
+}
+.hamburger-container{
+	display:flex;
+	justify-content: flex-end;
+	z-index: 50;
+}
+.sub-menu{
+	border: 2px solid black;
+	border-radius: 15px;
+}
+.menu-container .sub-menu.submenu-1 {	
+			background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint4.png);
+	background-size: 45vw;
+	background-position: -10vw 0vw;
+		background-repeat: no-repeat;
+			border: solid 2px #0B8F99;
+	border-radius: 15px;
+}
+.menu-container .sub-menu.submenu-2 {
+	background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint2.png);
+	background-size: 65vw;
+	background-position: 5vw 0vw;
+	background-repeat: no-repeat;
+			border: solid 2px #D47A5F;
+	border-radius: 15px;
+}
+.menu-container .sub-menu.submenu-3 {
+  	background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/navpaint3.png);
+	background-size: 69vw;
+    background-position: 20vw -3vw;
+		background-repeat: no-repeat;
+		border: solid 2px #FDC677;
+	border-radius: 15px;
+}
+.menu-container .sub-menu.submenu-4 {
+   background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/NavPaint.png);
+	background-size: 45vw;
+	background-position: -10vw -5vw;
+	background-repeat: no-repeat;
+	border: solid 2px #57558C;
+	border-radius: 15px;
+}
+

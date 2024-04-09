@@ -1,0 +1,160 @@
+.mobile_history_outer_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 11vh;
+    font-family: Kaisei Decol;
+  }
+  
+  .mobile_history_image_top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .mobile_sunset {
+    width: 100vw;
+    position: relative;
+  }
+  
+  .mobile_sunset_image {
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/sunset-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 30vh; /* Adjust as needed */
+    filter: brightness(80%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mobile_our_story {
+    background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/purpledefined.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -27%;
+    bottom: 0;
+    width: 250px;
+    text-align: center;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+  
+  }
+  
+  .mobile_our_story h2 {
+    padding: 2rem;
+    color: white;
+    font-size: 22pt;
+    position: relative;
+      z-index: 4 !important;		
+  }
+  
+  .mobile_vertical_line {
+    height: 250%;
+    position: absolute;
+    top: 35%;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    background: linear-gradient(to bottom, #57558C 0%, #F4C078 35%, #0B8F99 60%, #57558C 100%);
+    transform: translateX(-50%);
+  }
+  
+  .mobile_history_our_history,
+  .mobile_southwest_to_outback,
+  .mobile_new_mexico_end {
+    position: relative;
+    z-index: 3;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f4c078da; 
+  }
+  .mobile_history_our_history img,
+  .mobile_southwest_to_outback img,
+  .mobile_new_mexico_end img {
+    margin-top: 2rem;
+  }
+  
+  .mobile_southwest_to_outback {
+    background-color: #0b9099de; 
+    color: white;
+  }
+  
+  .mobile_new_mexico_end {
+    background-color: #57558cda; 
+    color: white;
+  }
+  
+  .mobile_history_our_history h3,
+  .mobile_history_mid_page h3 {
+    font-size: 16pt;
+    margin: 1rem;
+  }
+  
+  .mobile_history_our_history h3,
+  .mobile_history_our_history p {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .mobile_history_yellow_paint,
+  .mobile_history_teal_paint,
+  .mobile_history_nm_end {
+    position: absolute;
+    top: 100px;
+    width: 48vw;
+    z-index: -1;
+  }
+  
+  .mobile_history_mid_page{
+      margin-top: 50%;
+  }
+  
+  .mobile_history_top_background {
+    position: relative; 
+  }
+  .mobile_history_top_background::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 370px;
+    background-image: url('https://dev.relationalearning.com/wp-content/uploads/2024/02/sunset-scaled.jpg');
+    background-size: cover; 
+    background-position: center; 
+    filter: brightness(0.8); 
+    z-index: 0;
+  padding-bottom: 2rem;
+  }
+  .mobile_history_top{
+    color: white;
+    text-align: center;
+  }
+  .mobile_history_top h2{
+    position: relative;
+    font-size: 26pt;
+    padding: 1rem;
+    padding-top: 2rem;
+    z-index: 1;
+         background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/purpledefined.png);
+     background-size: 100vw;
+     background-repeat: no-repeat;
+  
+  }
+  .mobile_history_top_inner{
+  background-color: #57558cd2;
+  line-height: 1.5;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0rem;
+  position: relative;
+  z-index: 2;
+  }
+  
