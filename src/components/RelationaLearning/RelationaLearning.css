@@ -408,8 +408,10 @@ font-size: 20pt;
     }
 
 }
+
 @media (min-width: 1600px) {
-    .relationalearning_bullets ul{
+	
+	    .relationalearning_bullets ul{
         margin: 4rem 28rem;
     }
     .relationalearning_bullets h3{
@@ -436,14 +438,13 @@ font-size: 20pt;
     .relationalearning_mid_page img{
         width: 30vw;
     }
-}
-@media (min-width: 1600px) {
+	
+	
+	
     .relationalearning_top_inner p{
         margin: 2rem 8rem;
     }
-    .relationalearning_bullets ul{
-        margin: 4rem 36rem;
-    }
+
     .relationalearning_mid_page p{
         padding: 2rem;
     }
@@ -523,7 +524,7 @@ font-size: 20pt;
 
 @media (min-width: 2000px) {
     .relationalearning_bullets ul{
-        margin: 4rem 50rem;
+        margin: 4rem 40rem;
     }
     .orange_paint{
         width: 10vw;

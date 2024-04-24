@@ -257,6 +257,31 @@ z-index: 2;
 }
 
 
+.programs_carousel {
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 95%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 0;
+  margin-left: 10px; /* Add margin to the left side */
+}
+
+.slick-next {
+  right: 0;
+  margin-right: 10px; /* Add margin to the right side */
+}
+
+
 
 
 

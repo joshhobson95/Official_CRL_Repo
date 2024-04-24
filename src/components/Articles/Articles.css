@@ -56,6 +56,7 @@ z-index: 2;
 
 .resources_mid_page{
     display: flex;
+	flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -67,8 +68,8 @@ z-index: 2;
     background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/02/jason-pofahl-rRmVB-gHZQc-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 50vw;
-    width: 50vw;
+	background-size: 80vw;
+    width: 80vw;
     padding: 2rem;
     margin: 1rem;
 }
@@ -78,8 +79,8 @@ z-index: 2;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: 50vw;
-    width: 50vw;
+    background-size: 80vw;
+    width: 80vw;
     padding: 2rem;
     margin: 1rem;
 }
@@ -88,8 +89,8 @@ z-index: 2;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-size: 50vw;
-    width: 50vw;
+    background-size: 80vw;
+    width: 80vw;
     padding: 2rem;
     margin: 1rem;
 }
@@ -166,6 +167,19 @@ z-index: 2;
     .resources_mid_page{
         flex-direction: row;
     }
+		.resource_block1{
+    background-size: 50vw;
+    width: 50vw;
+}
+		.resource_block2{
+    background-size: 50vw;
+    width: 50vw;
+}
+	.resource_block3{
+    background-size: 50vw;
+    width: 50vw;
+}
+	
 }
 
 

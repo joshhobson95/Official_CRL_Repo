@@ -98,14 +98,19 @@ publication_two_book_container{
     justify-content: space-around;
 }
 .publication_one{
-    height: 100%;
     width: 65vw;
     padding: 2rem;
     align-self: center;
 }
+.publication_one_book_container{
+	display: flex;
+	justify-content: center;
+}
 
-
-
+.publication_one_ol{
+	margin: 2rem;
+	font-size: 12pt;
+}
 
 @media (min-width: 750px) {
 
@@ -124,6 +129,13 @@ publication_two_book_container{
 
 
 @media (min-width: 1024px) {
+	
+	.publication_one_ol{
+	font-size: 16pt;
+}
+	
+	
+	
 	.publications_mid_page{
     margin-top: 100px;
 }

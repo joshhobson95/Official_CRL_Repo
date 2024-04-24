@@ -280,8 +280,10 @@ function faculty_bio_shortcode() {
     wp_enqueue_script('jquery');
 
    $js_code = "
-    <script>
+ <script>
     jQuery(document).ready(function($) {
+        var linkOpened = false;
+
         $('.faculty-bio-h2b').click(function() {
             var bioId = $(this).find('.toggle-bio').attr('data-bio-id');
             var bioInner = $('#' + bioId);
@@ -294,8 +296,23 @@ function faculty_bio_shortcode() {
                 toggleBtn.html('+'); // Change back to a plus sign
             }
         });
+
+        // Handle clicks on links
+        $('.faculty-bio-inner a').click(function(event) {
+            // Check if link has already been opened
+            if (!linkOpened) {
+                // Link has not been opened yet
+                // Set flag to true
+                linkOpened = true;
+            } else {
+                // Link has already been opened
+                // Prevent default behavior
+                event.preventDefault();
+            }
+        });
     });
     </script>";
+
 
     $css_code = "
     <style>
@@ -324,40 +341,106 @@ function faculty_bio_shortcode() {
     <div class='faculty-bio'>
 	<div class='faculty-bio-h2b'>
 	  <button class='toggle-bio' data-bio-id='bio1'>+</button>
-        <h2>Sofia Martinez</h2>
+        <h2>Bob Sparks</h2>
       
 	</div>	
         <div class='faculty-bio-inner' id='bio1'>
-            <p>Bio for Sofia Martinez...</p>
+            <p>Bob is a seasoned entrepreneur, developer, educator, and community advocate with a passion for fostering personal well-being. Currently, he serves as a leadership coach and business advisor, championing RelationaLeadership to enhance both organizational performance and personal satisfaction. Bob advocates for leadership courage, creativity, and authenticity as pathways to joy and happiness. With a diverse background spanning roles such as founder, partner, therapist, professor, and superintendent, including founding and managing various ventures, he offers a broad perspective on leadership and personal growth. His expertise in building businesses, training leaders, and mentoring individuals towards joyful leadership lives has made him a sought-after development expert. Notably, he finds fulfillment in his role as an advisor and RelationaLearning Coach at Sparks Financial, a leading wealth management firm.</p>
         
         </div>
 		<div class='faculty-bio-h2b'>
 		<button class='toggle-bio' data-bio-id='bio2'>+</button>
-        <h2>John Doe</h2>
+        <h2>Lisa Otero</h2>
         
 		</div>
         <div class='faculty-bio-inner' id='bio2'>
-            <p>Bio for John Doe...</p>
+            <p>Lisa Otero is the Principal of Many Nations Academy in Portland, Oregon, the sole culturally specific, Native American-focused high school in the city. With three decades of experience in education, she champions a philosophy centered on Relationships First, culturally responsive pedagogies, and healing-centered engagement. Lisa's career has seen her serve as a classroom teacher, Dean of Students, Athletic Director, and Principal across California, New Mexico, and Oregon. She has led professional development sessions, workshops, and study tours for educators in the United States and Australia, co-authoring the book 'RelationaLearning: A Guide to Using Notebooks in the Classroom.' Committed to community-centered schooling, Lisa advocates for institutions that prioritize cultural expression, authenticity, and equity, aiming to dismantle oppressive systems and foster environments that are just, loving, and healing for all stakeholders. She envisions a shift towards human-centered schooling that celebrates and serves communities and individuals authentically.</p>
           
         </div>
 		<div class='faculty-bio-h2b'>
 		 <button class='toggle-bio' data-bio-id='bio3'>+</button>
-        <h2>Jane Smith</h2>
+        <h2>Sofia Martinez</h2>
      
 		</div>
         <div class='faculty-bio-inner' id='bio3'>
-            <p>Bio for Jane Smith...</p>
+            <p>Sofia Martinez is a Marketing Coordinator and Program Specialist at the Center for RelationaLearning, where she has been instrumental in expanding the organization's online presence and facilitating access to its content during times of isolation. Since joining in 2020, Sofia has dedicated herself to supporting marketing initiatives and developing programs, notably contributing to the growth of the <a href='https://dev.relationalearning.com/courses/'>Online RelationaLiteracy Academy </a> launched in 2023. Her recent role as publisher for the latest edition of <a href='https://dev.relationalearning.com/publications/'>'Dialogue for Democracy'</a> underscores her commitment to advancing educational resources. With a proven track record in marketing and program development, Sofia plays a vital role in driving the Center's mission forward. Connect with Sofia on LinkedIn at <a href='https://www.linkedin.com/in/sofia-martinez-91363b231/'>www.linkedin.com/in/sofia-martinez-91363b231.</a></p>
     
         </div>
 		<div class='faculty-bio-h2b'>
 		<button class='toggle-bio' data-bio-id='bio4'>+</button>
-        <h2>Alex Johnson</h2>
+        <h2>Professor John Halsey</h2>
         
 		</div>
         <div class='faculty-bio-inner' id='bio4'>
-            <p>Bio for Alex Johnson...</p>
+            <p>John is an Emeritus Professor at Flinders University, recognized for his substantial contributions to education, particularly in rural contexts. With a background spanning teaching, school leadership, and high-level educational administration, he brings a wealth of experience to his research and advocacy. His doctoral research, focusing on the role construction of rural school principals, sheds light on the intricate dynamics of rural education. John passionately advocates for accessible, high-quality education and care in rural areas, emphasizing their pivotal role in sustaining vibrant communities. He underscores the importance of nurturing rural educational leaders and ensuring governmental support to address the unique challenges and opportunities of rural education.</p>
             
         </div>
+		
+		
+		
+				<div class='faculty-bio-h2b'>
+		<button class='toggle-bio' data-bio-id='bio5'>+</button>
+        <h2>Robert Csoti</h2>
+        
+		</div>
+        <div class='faculty-bio-inner' id='bio5'>
+            <p>Robert is an educational consultant specializing in cultivating dynamic school cultures and effective leadership teams through Professional Learning days and coaching, with a focus on Relational Leadership. As a leadership coach and Principal mentor, he aids leaders in enhancing their capacity for community-building, team management, and innovation. Robert emphasizes the development of Emotional Intelligence to empower leaders to excel. Formerly, he served as the Principal of Elwood Primary School, known for its strong community involvement and innovative approach to learning. Collaborating with George, David Rothstadt, and Monash University, Robert contributed to the development of community-focused schools, advocating for personalized curricula and enhanced learning relationships. He believes in challenging traditional compliance paradigms and fostering leadership courage to enact meaningful change within educational communities.</p>
+            
+        </div>
+		
+		
+			<div class='faculty-bio-h2b'>
+		<button class='toggle-bio' data-bio-id='bio6'>+</button>
+        <h2>Maggie Farrar</h2>
+        
+		</div>
+        <div class='faculty-bio-inner' id='bio6'>
+            <p>Maggie brings a wealth of experience from senior leadership roles in schools and Local Authorities in London and Birmingham, including serving as Director for Leadership Development, Research, and Succession Planning at the National College for School Leadership in England. Instrumental in shaping school-led self-improvement systems, she has designed leadership programs to foster system leadership and cluster-based school improvement approaches. Maggie's international work extends to supporting the development of educational leadership frameworks in Wales and collaborating on networked, self-improving school systems globally. Recently, she has focused on nurturing the 'inner life' of school leaders, leveraging mindfulness practices to enhance leadership presence and well-being. You can experience some of her life-changing mindfulness work through her current offering through the Center, <a href='https://dev.relationalearning.com/programs/'>“RelationaLeadership and the Power of Presence”. </a>
+As a Trustee of 'The Story Museum' in Oxford, she contributes to their mission of transforming lives through storytelling. Visit her website at <a href='https://www.empoweringleadership.co.uk/'>https://www.empoweringleadership.co.uk/</a> for leadership resources and more information about Maggie's work.</p>
+            
+        </div>
+		
+		
+		
+			<div class='faculty-bio-h2b'>
+		<button class='toggle-bio' data-bio-id='bio7'>+</button>
+        <h2>Zoe Otero-Martinez</h2>
+        
+		</div>
+        <div class='faculty-bio-inner' id='bio7'>
+            <p>Zoé Otero-Martinez brings over two decades of impactful service in New Mexico's non-profit sector, excelling in connecting communities and driving effective strategies. Her expertise encompasses consortium building, program management, fundraising, and comprehensive outreach efforts. Driven by a steadfast commitment to social justice, Zoé thrives on collaborating with like-minded organizations. Through the application of human-centered design principles, she pioneers innovative solutions to societal challenges. Zoé holds a Bachelor of Science in Family Studies from the University of New Mexico, grounding her belief in the vital role of family wellness in community health and positive transformation. Currently serving as the Civic Engagement Manager for the City of Albuquerque, Zoé focuses on volunteer engagement, education partnerships, community conversations, and non-profit and philanthropic initiatives. Her approach recognizes the intrinsic link between civic engagement and family well-being, advocating for robust community involvement to nurture thriving, resilient families and communities.
+</p>
+            
+        </div>
+		
+		
+					<div class='faculty-bio-h2b'>
+		<button class='toggle-bio' data-bio-id='bio8'>+</button>
+        <h2>David Rothstadt</h2>
+        
+		</div>
+        <div class='faculty-bio-inner' id='bio8'>
+            <p>David Rothstadt, residing in Victoria, Australia, has dedicated much of his career to collaborating with diverse communities, notably during his tenure as Principal of Noble Park Primary School. His partnership with George Otero facilitated a focus on community-building to enhance student learning, resulting in the collaborative publication 'Creating Powerful Learning Relationships: A Whole School Community Approach,' co-authored with Robert Csoti and George, subsequently expanded in a second edition to emphasize leadership. David advocates for partnerships between school communities and local/global organizations to mutually benefit and support youth, stressing the importance of schools evolving beyond mere educational institutions to become integral community organizations. He actively promotes this agenda through local conferences and engagement in New Mexico. Interested in social enterprises and policy development, David currently volunteers in the Disability Sector with the Office of the Public Advocate, exemplifying his commitment to practical community involvement and advancement.
+
+
+</p>
+            
+        </div>
+		
+		
+						<div class='faculty-bio-h2b'>
+		<button class='toggle-bio' data-bio-id='bio9'>+</button>
+        <h2>Josh Hobson</h2>
+        
+		</div>
+        <div class='faculty-bio-inner' id='bio9'>
+            <p>Josh Hobson, a proficient web developer hailing from Albuquerque, New Mexico, has been crafting digital landscapes since 2022. A graduate of Sandia Preparatory School and Seattle Central College, Josh's journey into the realms of coding began early, fueling his passion for website development. With a keen eye for design and a knack for coding wizardry, he seamlessly blends functionality with aesthetics. Josh's dedication shines through in every line of code, evident in the website you're currently exploring. For more of his work, visit his website at <a href='https://joshhobson95.github.io/'>joshhobson95.github.io.</a>
+
+
+</p>
+            
+        </div>
+		
     </div>";
 
     // Combine CSS, JavaScript, and Shortcode content

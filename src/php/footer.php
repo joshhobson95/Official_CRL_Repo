@@ -8,7 +8,11 @@
     </div>
     <div class='footer_inner_shell'>
       <div class='footer_top_one'>
+		  <a href='https://dev.relationalearning.com/'>
+	
         <img class='BW_logo' src='https://dev.relationalearning.com/wp-content/uploads/2024/03/BWLogo.png' alt='Center for RelationaLearning Logo'/>
+			  
+			</a>
         <h3>Join Us On The Journey To Put Relationships First!</h3>
       </div>
       <div class='footer_top_two'>

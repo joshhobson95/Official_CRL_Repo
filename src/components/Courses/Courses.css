@@ -38,7 +38,7 @@
     z-index: 1;
 }
 .courses_top_inner{
-background-color: #fdc577c9;
+background-color: #027a8ad3;
 line-height: 1.5;
 padding: 0.5rem 2rem;
 margin: 2rem 0rem;
@@ -218,6 +218,20 @@ padding: 0.5rem;
     margin-top: 200px;
 }
 
+
+.teaching_relational_mind_button:hover{
+	background-color: #027B8A;
+	transition: 0.75s
+}
+.leading_relational_mind_button:hover{
+	background-color: #A56654;
+	transition: 0.75s;
+}
+
+.living_relational_mind_button:hover{
+	background-color: #697230;
+	transition: 0.75s;
+}
 
 
 @media (min-width: 750px) {

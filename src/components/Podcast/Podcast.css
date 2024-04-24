@@ -123,8 +123,8 @@ margin: 2rem;
 }
 .podcast_video_header{
     background-image: url(https://dev.relationalearning.com/wp-content/uploads/2024/03/purplenewstroke-e1709934887800.png);
-    background-size: 70vw;
-    background-position: 0vw 0vw;
+	background-size: 50vw;
+    background-position: -20vw;
     background-repeat: no-repeat;
     margin: 2rem;
     padding: 2rem 0rem;
@@ -217,6 +217,9 @@ font-size: 16pt;
 	}
 	.podcast_top h2{
 		padding-top: 5vh;
+	}
+	.podcast_video_header{
+    background-position: 10vw;
 	}
 	
 }

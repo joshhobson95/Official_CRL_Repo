@@ -432,16 +432,15 @@ text-align: center;
 	cursor: pointer;
 }
 
-
-
-
-
+.global_bottom p{
+	margin: 0 !important;
+	padding: 0 !important;
+}
 
 
 
 
 @media (min-width: 1024px) {
-	
 	
 
 	
@@ -526,6 +525,7 @@ text-align: center;
     }
     .CRL_for_all img{
         width: 50vw;
+		margin-top: 140px;
     }
     .CRL_for_all_top{
         display: flex;
